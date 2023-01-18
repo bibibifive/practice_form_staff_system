@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#staff_system {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "pingfang sc", "Courier New", Courier, monospace;
+  width: 550px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0 0 0 20px;
+}
+
+.header {
+  height: 120px;
+  padding: 15px 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header p {
+  font-size: 1.3em;
+  font-weight: 700;
+  align-self: flex-start;
+}
+.header .save_block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .save_block div {
+  position: relative;
+}
+.header .save_block div span {
+  width: 100%;
+  font-size: 0.5em;
+  position: absolute;
+  left: 1em;
+  bottom: -18px;
+  color: rgba(255, 0, 0, 0.8);
+}
+.header .save_block input {
+  border: 1px solid rgba(34, 34, 34, 0.1333333333);
+  line-height: 1.2em;
+  width: 10em;
+  padding: 5px;
+  border-radius: 0.3em;
+  box-shadow: inset 0 0 0.1em #222;
+}
+.header .save_block input::-moz-placeholder {
+  font-size: 0.9em;
+  color: #222222;
+}
+.header .save_block input:-ms-input-placeholder {
+  font-size: 0.9em;
+  color: #222222;
+}
+.header .save_block input::placeholder {
+  font-size: 0.9em;
+  color: #222222;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content table {
+  border: 2px solid #c6c6c6;
+  border-collapse: collapse;
+  margin-right: 20px;
+}
+.content table :is(th, td) {
+  text-align: left;
+  padding: 10px 20px;
+  border-bottom: 1px solid #c6c6c6;
+}
+.content table thead {
+  background-color: rgba(34, 34, 34, 0.1333333333);
+}
+
+.upload_button {
+  margin-top: 20px;
+}
+
+button {
+  width: 5em;
+  height: 2em;
+  padding: 2px 5px;
+  border: 0;
+  background-color: #278cff;
+  border-radius: 0.2em;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(110%);
+}
+
+.hide {
+  margin: 0;
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: #278cff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background: #eee;
+}/*# sourceMappingURL=index.css.map */

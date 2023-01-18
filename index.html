@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.8 JavaScript应用</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="staff_system">
+      <div class="header">
+        <p>人员管理系统</p>
+        <div class="save_block">
+          <div>
+            <input
+              type="text"
+              placeholder="姓名"
+              name="user_name"
+              id="user_name"
+            />
+            <span class="name_judge hide">!请输入1-20位的字母</span>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="年龄"
+              name="user_age"
+              id="user_age"
+            />
+            <span class="age_judge hide">!请输入数字</span>
+          </div>
+          <button class="save_button">保存</button>
+        </div>
+      </div>
+      <div class="content">
+        <table>
+          <thead>
+            <th>姓名</th>
+            <th>年龄</th>
+          </thead>
+        </table>
+      </div>
+      <button class="upload_button">上传</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
